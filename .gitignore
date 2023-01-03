@@ -101,3 +101,11 @@ app.*.map.json
 **/android/**/GeneratedPluginRegistrant.java
 **/android/key.properties
 *.jks
+
+android/
+ios/
+linux/
+macos/
+test/
+web/
+windows/
