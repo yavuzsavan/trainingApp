@@ -11,6 +11,7 @@ class UserAccount extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepPurple.shade800,
       ),
+      backgroundColor: Colors.deepPurple.shade100,
       body: Center(
         child: Column(
           children: [
@@ -26,22 +27,24 @@ class UserAccount extends StatelessWidget {
                 child: Column(
                   children: [
                     Container(
-                      margin: const EdgeInsets.only(top: 12.0, bottom: 12.0),
-                      width: 100,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade400,
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(80.0),
-                        child: Image.asset("assets/images/einstein2.png"),
-                      )
-                      // Image.asset(
-                      //     "assets/images/einstein2.png",
-                      //     fit: BoxFit.scaleDown,
-                      //   ),
-                    ),
+                        margin: const EdgeInsets.only(top: 12.0, bottom: 12.0),
+                        width: 100,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade400,
+                          borderRadius: BorderRadius.circular(100),
+                        ),
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(80.0),
+                          child: Image.asset(
+                            "assets/images/einstein2.png",
+                          ),
+                        )
+                        // Image.asset(
+                        //     "assets/images/einstein2.png",
+                        //     fit: BoxFit.scaleDown,
+                        //   ),
+                        ),
                     const Padding(
                       padding: EdgeInsets.only(bottom: 4.0),
                       child: Text(
@@ -75,7 +78,13 @@ class UserAccount extends StatelessWidget {
                           ),
                           child: Column(
                             children: const [
-                              Icon(Icons.info_outlined),
+                              Padding(
+                                padding: EdgeInsets.only(top: 12),
+                                child: Icon(
+                                  Icons.info_outlined,
+                                  
+                                ),
+                              ),
                               Text(
                                 "General Info",
                               ),
@@ -92,7 +101,10 @@ class UserAccount extends StatelessWidget {
                           ),
                           child: Column(
                             children: const [
-                              Icon(Icons.book_outlined),
+                              Padding(
+                                padding: EdgeInsets.only(top: 12.0),
+                                child: Icon(Icons.book_outlined),
+                              ),
                               Text(
                                 "Health History",
                               ),
@@ -108,7 +120,10 @@ class UserAccount extends StatelessWidget {
                           ),
                           child: Column(
                             children: const [
-                              Icon(Icons.calendar_month_outlined),
+                              Padding(
+                                padding: EdgeInsets.only(top: 12.0),
+                                child: Icon(Icons.calendar_month_outlined,),
+                              ),
                               Text(
                                 "        Your\nAppoinments",
                               ),
@@ -130,7 +145,10 @@ class UserAccount extends StatelessWidget {
                         ),
                         child: Column(
                           children: const [
-                            Icon(Icons.scale_outlined),
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.0),
+                              child: Icon(Icons.scale_outlined),
+                            ),
                             Text(
                               "Measurement",
                             ),
@@ -147,7 +165,10 @@ class UserAccount extends StatelessWidget {
                         ),
                         child: Column(
                           children: const [
-                            Icon(Icons.domain_outlined),
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.0),
+                              child: Icon(Icons.domain_outlined),
+                            ),
                             Text(
                               "  Medical\nProcedures",
                             ),
@@ -163,7 +184,10 @@ class UserAccount extends StatelessWidget {
                         ),
                         child: Column(
                           children: const [
-                            Icon(Icons.document_scanner_outlined),
+                            Padding(
+                              padding: EdgeInsets.only(top: 12.0),
+                              child: Icon(Icons.document_scanner_outlined,),
+                            ),
                             Text(
                               "Documents",
                             ),

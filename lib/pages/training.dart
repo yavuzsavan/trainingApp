@@ -10,20 +10,21 @@ class UserTraining extends StatelessWidget {
         title: Text("Training"),
         backgroundColor: Colors.deepPurple.shade800,
       ),
-      body: Center(
-          child: Column(
-        children: [
-          Image.asset(
-            "assets/images/malebody_front.png",
-            height: 550,
-            width: 600,
-          ),
-          // Image.asset(
-          //   "assets/images/malebody_back.png",
-          // ),
-        ],
-      )),
       backgroundColor: Colors.deepPurple.shade100,
+      body: Center(
+        child: Column(
+          children: [
+            Image.asset(
+              "assets/images/malebody_front.png",
+              height: 550,
+              // width: 800,
+            ),
+            // Image.asset(
+            //   "assets/images/malebody_back.png",
+            // ),
+          ],
+        ),
+      ),
     );
   }
 }

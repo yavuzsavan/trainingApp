@@ -30,13 +30,29 @@ class _UserStepState extends State<UserStep> {
                 progressColor: Colors.deepPurple,
                 backgroundColor: Colors.deepPurple.shade200,
                 circularStrokeCap: CircularStrokeCap.round,
-                center: const Text(
-                  "2846",
-                  style: TextStyle(fontSize: 40),
+                center: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 30),
+                      child: Image.asset(
+                        "assets/icons/steps.png",
+                        height: 60,
+                        width: 60,
+                      ),
+                    ),
+                    const Text("2846",
+                    style: TextStyle(fontSize: 40),),
+                  ],
                 ),
+                // const Text(
+                //   "2846",
+                //   style: TextStyle(fontSize: 40),
+                // ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 90,),
+                padding: const EdgeInsets.only(
+                  left: 90,
+                ),
                 child: Row(
                   children: [
                     Padding(
@@ -50,10 +66,13 @@ class _UserStepState extends State<UserStep> {
                         progressColor: Colors.deepPurple,
                         backgroundColor: Colors.deepPurple.shade200,
                         circularStrokeCap: CircularStrokeCap.round,
-                        center: const Text("1.4 KM", style: TextStyle(fontSize: 20),),
+                        center: const Text(
+                          "1.4 KM",
+                          style: TextStyle(fontSize: 20),
+                        ),
                       ),
                     ),
-                      CircularPercentIndicator(
+                    CircularPercentIndicator(
                       radius: 50,
                       lineWidth: 10,
                       percent: 0.2,
@@ -62,7 +81,10 @@ class _UserStepState extends State<UserStep> {
                       progressColor: Colors.deepPurple,
                       backgroundColor: Colors.deepPurple.shade200,
                       circularStrokeCap: CircularStrokeCap.round,
-                      center: const Text("149 Cal", style: TextStyle(fontSize: 20),),
+                      center: const Text(
+                        "149 Cal",
+                        style: TextStyle(fontSize: 20),
+                      ),
                     ),
                   ],
                 ),
