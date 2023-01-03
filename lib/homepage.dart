@@ -31,13 +31,16 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.deepPurple.shade300,
         onTap: navigateBottomBar,
         currentIndex: selectedIndex,
         type: BottomNavigationBarType.fixed,
+        fixedColor: Colors.white60,
         items: [
         BottomNavigationBarItem(
           icon: Image.asset("assets/icons/steps.png",width: 25, height: 25,),
           label: "Steps",
+          
         ),
         BottomNavigationBarItem(
           icon: Image.asset("assets/icons/calendar.png",width: 20, height: 20,),

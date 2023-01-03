@@ -9,7 +9,7 @@ class UserWeight extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Weight Scale"),
-        backgroundColor: Colors.deepPurple.shade500,
+        backgroundColor: Colors.deepPurple.shade800,
       ),
       backgroundColor: Colors.deepPurple.shade100,
       body: Padding(

@@ -6,7 +6,24 @@ class UserTraining extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Training"),
+      appBar: AppBar(
+        title: Text("Training"),
+        backgroundColor: Colors.deepPurple.shade800,
+      ),
+      body: Center(
+          child: Column(
+        children: [
+          Image.asset(
+            "assets/images/malebody_front.png",
+            height: 550,
+            width: 600,
+          ),
+          // Image.asset(
+          //   "assets/images/malebody_back.png",
+          // ),
+        ],
+      )),
+      backgroundColor: Colors.deepPurple.shade100,
     );
   }
 }

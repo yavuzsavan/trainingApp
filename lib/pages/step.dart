@@ -14,7 +14,7 @@ class _UserStepState extends State<UserStep> {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Pedometer"),
-          backgroundColor: Colors.deepPurple.shade500,
+          backgroundColor: Colors.deepPurple.shade800,
         ),
         backgroundColor: Colors.deepPurple.shade100,
         body: Center(
