@@ -7,7 +7,7 @@ class UserTraining extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Training"),
+        title: const Text("Training"),
         backgroundColor: Colors.deepPurple.shade800,
       ),
       backgroundColor: Colors.deepPurple.shade100,
