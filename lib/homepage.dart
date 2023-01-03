@@ -36,20 +36,20 @@ class _HomePageState extends State<HomePage> {
         type: BottomNavigationBarType.fixed,
         items: [
         BottomNavigationBarItem(
-          icon: Image.asset("assets/icons/steps.png",width: 30, height: 30,),
+          icon: Image.asset("assets/icons/steps.png",width: 25, height: 25,),
           label: "Steps",
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.calendar_month_outlined),
+          icon: Image.asset("assets/icons/calendar.png",width: 20, height: 20,),
           label: "Calendar",
         ),
         BottomNavigationBarItem(
-          icon: Image.asset("assets/icons/weight.png",width: 30, height: 30,),
+          icon: Image.asset("assets/icons/weight.png",width: 25, height: 25,),
           label: "Trainning",
         ),
-        const BottomNavigationBarItem(
-          icon: Icon(Icons.person_outlined),
-          label: "Profile",
+        BottomNavigationBarItem(
+          icon: Image.asset("assets/icons/user.png",width: 20, height: 20,),
+          label: "User",
         ),
       ]),
 
