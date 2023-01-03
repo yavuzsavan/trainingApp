@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -29,13 +28,11 @@ class UserWeight extends StatelessWidget {
                   child: Row(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(left: 8.0, right: 10.0),
-                        child: Container(
-                          child: Image.asset(
-                            "assets/icons/weightscales.png",
-                            height: 120,
-                            width: 120,
-                          ),
+                        padding: const EdgeInsets.only(left: 8.0, right: 10.0),
+                        child: Image.asset(
+                          "assets/icons/weightscales.png",
+                          height: 120,
+                          width: 120,
                         ),
                       ),
                       Container(

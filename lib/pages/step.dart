@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class UserStep extends StatefulWidget {
   const UserStep({super.key});
@@ -10,10 +9,11 @@ class UserStep extends StatefulWidget {
 }
 
 class _UserStepState extends State<UserStep> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Pedometer"),
+          title: const Text("Pedometer"),
           backgroundColor: Colors.deepPurple.shade500,
         ),
         backgroundColor: Colors.deepPurple.shade100,
@@ -30,7 +30,7 @@ class _UserStepState extends State<UserStep> {
                 progressColor: Colors.deepPurple,
                 backgroundColor: Colors.deepPurple.shade200,
                 circularStrokeCap: CircularStrokeCap.round,
-                center: Text(
+                center: const Text(
                   "2846",
                   style: TextStyle(fontSize: 40),
                 ),
@@ -50,7 +50,7 @@ class _UserStepState extends State<UserStep> {
                         progressColor: Colors.deepPurple,
                         backgroundColor: Colors.deepPurple.shade200,
                         circularStrokeCap: CircularStrokeCap.round,
-                        center: Text("1.4 KM", style: TextStyle(fontSize: 20),),
+                        center: const Text("1.4 KM", style: TextStyle(fontSize: 20),),
                       ),
                     ),
                       CircularPercentIndicator(
@@ -62,7 +62,7 @@ class _UserStepState extends State<UserStep> {
                       progressColor: Colors.deepPurple,
                       backgroundColor: Colors.deepPurple.shade200,
                       circularStrokeCap: CircularStrokeCap.round,
-                      center: Text("149 Cal", style: TextStyle(fontSize: 20),),
+                      center: const Text("149 Cal", style: TextStyle(fontSize: 20),),
                     ),
                   ],
                 ),
