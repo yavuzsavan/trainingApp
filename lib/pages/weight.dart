@@ -28,7 +28,7 @@ class UserWeight extends StatelessWidget {
                   child: Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 8.0, right: 10.0),
+                        padding: const EdgeInsets.only(left: 25.0, right: 25.0),
                         child: Image.asset(
                           "assets/icons/weightscales.png",
                           height: 120,
@@ -36,7 +36,7 @@ class UserWeight extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        width: 150,
+                        width: 100,
                         height: 150,
                         decoration: BoxDecoration(
                             color: Colors.deepPurple.shade400,
