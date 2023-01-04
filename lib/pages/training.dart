@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 
-class UserTraining extends StatelessWidget {
+
+
+class UserTraining extends StatefulWidget {
   const UserTraining({super.key});
 
+  @override
+  State<UserTraining> createState() => _UserTrainingState();
+}
+
+class _UserTrainingState extends State<UserTraining> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,3 +35,4 @@ class UserTraining extends StatelessWidget {
     );
   }
 }
+

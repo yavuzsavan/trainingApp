@@ -1,9 +1,13 @@
-
 import 'package:flutter/material.dart';
 
-class UserAccount extends StatelessWidget {
+class UserAccount extends StatefulWidget {
   const UserAccount({super.key});
 
+  @override
+  State<UserAccount> createState() => _UserAccountState();
+}
+
+class _UserAccountState extends State<UserAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,7 +85,6 @@ class UserAccount extends StatelessWidget {
                                 padding: EdgeInsets.only(top: 12),
                                 child: Icon(
                                   Icons.info_outlined,
-                                  
                                 ),
                               ),
                               Text(
@@ -121,7 +124,9 @@ class UserAccount extends StatelessWidget {
                             children: const [
                               Padding(
                                 padding: EdgeInsets.only(top: 12.0),
-                                child: Icon(Icons.calendar_month_outlined,),
+                                child: Icon(
+                                  Icons.calendar_month_outlined,
+                                ),
                               ),
                               Text(
                                 "        Your\nAppoinments",
@@ -185,7 +190,9 @@ class UserAccount extends StatelessWidget {
                           children: const [
                             Padding(
                               padding: EdgeInsets.only(top: 12.0),
-                              child: Icon(Icons.document_scanner_outlined,),
+                              child: Icon(
+                                Icons.document_scanner_outlined,
+                              ),
                             ),
                             Text(
                               "Documents",

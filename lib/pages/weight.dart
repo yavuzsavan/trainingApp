@@ -1,9 +1,15 @@
 
 import 'package:flutter/material.dart';
 
-class UserWeight extends StatelessWidget {
+
+class UserWeight extends StatefulWidget {
   const UserWeight({super.key});
 
+  @override
+  State<UserWeight> createState() => _UserWeightState();
+}
+
+class _UserWeightState extends State<UserWeight> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,3 +133,4 @@ class UserWeight extends StatelessWidget {
     );
   }
 }
+

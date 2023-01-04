@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
+
 class UserStep extends StatefulWidget {
   const UserStep({super.key});
 
   @override
-  _UserStepState createState() => _UserStepState();
+  State<UserStep> createState() => _UserStepState();
 }
 
 class _UserStepState extends State<UserStep> {
@@ -33,7 +34,7 @@ class _UserStepState extends State<UserStep> {
                 center: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 30),
+                      padding: const EdgeInsets.only(top: 30,),
                       child: Image.asset(
                         "assets/icons/steps.png",
                         height: 60,
@@ -41,7 +42,7 @@ class _UserStepState extends State<UserStep> {
                       ),
                     ),
                     const Text("2846",
-                    style: TextStyle(fontSize: 40),),
+                    style: TextStyle(fontSize: 40,),),
                   ],
                 ),
                 // const Text(
@@ -56,7 +57,7 @@ class _UserStepState extends State<UserStep> {
                 child: Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 30),
+                      padding: const EdgeInsets.only(right: 30,),
                       child: CircularPercentIndicator(
                         radius: 50,
                         lineWidth: 10,
@@ -68,7 +69,7 @@ class _UserStepState extends State<UserStep> {
                         circularStrokeCap: CircularStrokeCap.round,
                         center: const Text(
                           "1.4 KM",
-                          style: TextStyle(fontSize: 20),
+                          style: TextStyle(fontSize: 20,),
                         ),
                       ),
                     ),
@@ -83,7 +84,7 @@ class _UserStepState extends State<UserStep> {
                       circularStrokeCap: CircularStrokeCap.round,
                       center: const Text(
                         "149 Cal",
-                        style: TextStyle(fontSize: 20),
+                        style: TextStyle(fontSize: 20,),
                       ),
                     ),
                   ],
@@ -91,6 +92,8 @@ class _UserStepState extends State<UserStep> {
               ),
             ],
           ),
-        ));
+        ),
+    );
   }
 }
+
