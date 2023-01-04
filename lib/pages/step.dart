@@ -32,14 +32,12 @@ class _UserStepState extends State<UserStep> {
                 backgroundColor: Colors.deepPurple.shade200,
                 circularStrokeCap: CircularStrokeCap.round,
                 center: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 30,),
-                      child: Image.asset(
-                        "assets/icons/steps.png",
-                        height: 60,
-                        width: 60,
-                      ),
+                    Image.asset(
+                      "assets/icons/steps.png",
+                      height: 60,
+                      width: 60,
                     ),
                     const Text("2846",
                     style: TextStyle(fontSize: 40,),),
@@ -50,45 +48,38 @@ class _UserStepState extends State<UserStep> {
                 //   style: TextStyle(fontSize: 40),
                 // ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(
-                  left: 90,
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 30,),
-                      child: CircularPercentIndicator(
-                        radius: 50,
-                        lineWidth: 10,
-                        percent: 0.3,
-                        animation: true,
-                        animationDuration: 1000,
-                        progressColor: Colors.deepPurple,
-                        backgroundColor: Colors.deepPurple.shade200,
-                        circularStrokeCap: CircularStrokeCap.round,
-                        center: const Text(
-                          "1.4 KM",
-                          style: TextStyle(fontSize: 20,),
-                        ),
-                      ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  CircularPercentIndicator(
+                    radius: 50,
+                    lineWidth: 10,
+                    percent: 0.3,
+                    animation: true,
+                    animationDuration: 1000,
+                    progressColor: Colors.deepPurple,
+                    backgroundColor: Colors.deepPurple.shade200,
+                    circularStrokeCap: CircularStrokeCap.round,
+                    center: const Text(
+                      "1.4 KM",
+                      style: TextStyle(fontSize: 20,),
                     ),
-                    CircularPercentIndicator(
-                      radius: 50,
-                      lineWidth: 10,
-                      percent: 0.2,
-                      animation: true,
-                      animationDuration: 1000,
-                      progressColor: Colors.deepPurple,
-                      backgroundColor: Colors.deepPurple.shade200,
-                      circularStrokeCap: CircularStrokeCap.round,
-                      center: const Text(
-                        "149 Cal",
-                        style: TextStyle(fontSize: 20,),
-                      ),
+                  ),
+                  CircularPercentIndicator(
+                    radius: 50,
+                    lineWidth: 10,
+                    percent: 0.2,
+                    animation: true,
+                    animationDuration: 1000,
+                    progressColor: Colors.deepPurple,
+                    backgroundColor: Colors.deepPurple.shade200,
+                    circularStrokeCap: CircularStrokeCap.round,
+                    center: const Text(
+                      "149 Cal",
+                      style: TextStyle(fontSize: 20,),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ],
           ),
