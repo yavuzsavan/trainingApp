@@ -11,6 +11,7 @@ class _UserMeasurementState extends State<UserMeasurement> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepPurple.shade100,
       appBar: AppBar(
         backgroundColor: Colors.deepPurple.shade800,
         leading: BackButton(

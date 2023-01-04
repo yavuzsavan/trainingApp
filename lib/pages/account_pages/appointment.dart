@@ -11,6 +11,7 @@ class _UserAppointmentState extends State<UserAppointment> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.deepPurple.shade100,
       appBar: AppBar(
         backgroundColor: Colors.deepPurple.shade800,
         leading: BackButton(
