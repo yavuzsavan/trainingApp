@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:zarganaapp/pages/account_pages/appointment.dart';
+import 'package:zarganaapp/pages/account_pages/documents.dart';
+import 'package:zarganaapp/pages/account_pages/history.dart';
+import 'package:zarganaapp/pages/account_pages/info.dart';
+import 'package:zarganaapp/pages/account_pages/measurement.dart';
+import 'package:zarganaapp/pages/account_pages/procedures.dart';
+
 class UserAccount extends StatefulWidget {
   const UserAccount({super.key});
 
@@ -12,6 +19,7 @@ class _UserAccountState extends State<UserAccount> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text("Me"),
         backgroundColor: Colors.deepPurple.shade800,
       ),
       backgroundColor: Colors.deepPurple.shade100,
@@ -69,125 +77,207 @@ class _UserAccountState extends State<UserAccount> {
                 Column(
                   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 8, right: 8),
-                      width: 125,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade200,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(
-                            Icons.info_outlined,
-                          ),
-                          Text(
-                            "General Info",
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 8, right: 8),
-                      width: 125,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade200,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(Icons.book_outlined),
-                          Text(
-                            "Health History",
-                          ),
-                        ],
+                    InkWell(
+                      onTap: () {
+                        setState(
+                          () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const UserInfo(),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(bottom: 8, right: 8),
+                        width: 125,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade200,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(
+                              Icons.info_outlined,
+                            ),
+                            Text(
+                              "General Info",
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      margin: const EdgeInsets.only(right: 8.0),
-                      width: 125,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade200,
-                        borderRadius: BorderRadius.circular(5),
+                    InkWell(
+                      onTap: () {
+                        setState(
+                          () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const UserHistory(),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(bottom: 8, right: 8),
+                        width: 125,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade200,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(Icons.book_outlined),
+                            Text(
+                              "Health History",
+                            ),
+                          ],
+                        ),
                       ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(
-                            Icons.calendar_month_outlined,
-                          ),
-                          Text(
-                            "        Your\nAppoinments",
-                          ),
-                        ],
+                    ),
+                    InkWell(
+                      onTap: () {
+                        setState(
+                          () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const UserAppointment(),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 8.0),
+                        width: 125,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade200,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(
+                              Icons.calendar_month_outlined,
+                            ),
+                            Text(
+                              "        Your\nAppointments",
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
                 ),
                 Column(
                   children: [
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 8,),
-                      width: 125,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade200,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(Icons.scale_outlined),
-                          Text(
-                            "Measurement",
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(bottom: 8,),
-                      width: 125,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade200,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(Icons.domain_outlined),
-                          Text(
-                            "  Medical\nProcedures",
-                          ),
-                        ],
+                    InkWell(
+                      onTap: () {
+                        setState(
+                          () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const UserMeasurement(),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                          bottom: 8,
+                        ),
+                        width: 125,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade200,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(Icons.scale_outlined),
+                            Text(
+                              "Measurement",
+                            ),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      width: 125,
-                      height: 100,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple.shade200,
-                        borderRadius: BorderRadius.circular(5),
+                    InkWell(
+                      onTap: () {
+                        setState(
+                          () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const UserProcedures(),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        margin: const EdgeInsets.only(
+                          bottom: 8,
+                        ),
+                        width: 125,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade200,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(Icons.domain_outlined),
+                            Text(
+                              "  Medical\nProcedures",
+                            ),
+                          ],
+                        ),
                       ),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: const [
-                          Icon(
-                            Icons.document_scanner_outlined,
-                          ),
-                          Text(
-                            "Documents",
-                          ),
-                        ],
+                    ),
+                    InkWell(
+                      onTap: () {
+                        setState(
+                          () {
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const UserDocuments(),
+                              ),
+                            );
+                          },
+                        );
+                      },
+                      child: Container(
+                        width: 125,
+                        height: 100,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple.shade200,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(
+                              Icons.document_scanner_outlined,
+                            ),
+                            Text(
+                              "Documents",
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ],
