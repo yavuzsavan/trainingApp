@@ -31,11 +31,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.deepPurple.shade400,
+        backgroundColor: Colors.cyan.shade400,
         onTap: navigateBottomBar,
         currentIndex: selectedIndex,
         type: BottomNavigationBarType.fixed,
-        fixedColor: Colors.white60,
+        fixedColor: const Color(0xff000000),
         items: [
           BottomNavigationBarItem(
             icon: Image.asset(

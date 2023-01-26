@@ -15,9 +15,9 @@ class _UserStepState extends State<UserStep> {
     return Scaffold(
         appBar: AppBar(
           title: const Text("Pedometer"),
-          backgroundColor: Colors.deepPurple.shade800,
+          backgroundColor: Colors.cyan.shade400,
         ),
-        backgroundColor: Colors.deepPurple.shade100,
+        backgroundColor: const Color(0xffFFFFFF),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -28,8 +28,8 @@ class _UserStepState extends State<UserStep> {
                 percent: 0.4,
                 animation: true,
                 animationDuration: 1000,
-                progressColor: Colors.deepPurple,
-                backgroundColor: Colors.deepPurple.shade200,
+                progressColor: Colors.cyan.shade200,
+                backgroundColor: Colors.cyan.shade400,
                 circularStrokeCap: CircularStrokeCap.round,
                 center: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -57,8 +57,8 @@ class _UserStepState extends State<UserStep> {
                     percent: 0.3,
                     animation: true,
                     animationDuration: 1000,
-                    progressColor: Colors.deepPurple,
-                    backgroundColor: Colors.deepPurple.shade200,
+                    progressColor: Colors.cyan.shade200,
+                    backgroundColor: Colors.cyan.shade400,
                     circularStrokeCap: CircularStrokeCap.round,
                     center: const Text(
                       "1.4 KM",
@@ -71,8 +71,8 @@ class _UserStepState extends State<UserStep> {
                     percent: 0.2,
                     animation: true,
                     animationDuration: 1000,
-                    progressColor: Colors.deepPurple,
-                    backgroundColor: Colors.deepPurple.shade200,
+                    progressColor: Colors.cyan.shade200,
+                    backgroundColor: Colors.cyan.shade400,
                     circularStrokeCap: CircularStrokeCap.round,
                     center: const Text(
                       "149 Cal",
